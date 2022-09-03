@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 class Statistic extends React.Component {
    
@@ -19,5 +20,12 @@ class Statistic extends React.Component {
 
 };
 
+Statistic.propTypes = {
+    good: PropTypes.number.isRequired,
+    neutral: PropTypes.number.isRequired,
+    bad: PropTypes.number.isRequired,
+    total: PropTypes.number.isRequired,
+    positivePercentage: PropTypes.string.isRequired
+};
 
 export default Statistic
